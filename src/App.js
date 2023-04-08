@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import "./styles/global.css";
+import Drum from "./components/Drum";
+import drumKits from "./data/drumKits";
 
 function App() {
+  const [selectedKitName, setSelectedKitName] = useState(data[0].name);
+  const handleKitChange = (e) => {
+    setSelectedKitName(e.target.value);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Drum Punch</h1>
+      <label>Select a drum kit:</label>
+      <select name="" id="" value={selectedKitName} onChange={handleKitChange}>
+        {drumKits.map((kit) => {
+          <option key={kit.name} value={kit.name}>
+            {kit.name}
+          </option>
+        })}
+      </select>
+      <Drum kit={drumKits.find((kit) => kit.name === selectedKitName)}/>
     </div>
   );
 }
