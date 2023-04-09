@@ -12,12 +12,12 @@ function Drum(props) {
   }, []);
 
   const handleKeyDown = (e) => {
-    const pad = kit.kitPads.find((pad) => pad.padKey === e.key);
+    const pad = kit.kitPads.find((pad) => pad.padKey.includes(e.key));
     console.log(pad);
     if (pad) {
       const audio = new Audio(pad.padAudioSrc);
       console.log(pad.padAudioSrc);
-      audio.currentTime = 0;
+      audio.currentTime = 0.05;
       audio.play()
     }
   }

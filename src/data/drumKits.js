@@ -4,17 +4,17 @@ const drumKits = [
     kitPads: [
       {
         padName: 'hihat',
-        padKey: 'j',
+        padKey: ['j', 'f'],
         padAudioSrc: '/audio/hihat6.wav'
       },
       {
         padName: 'snare',
-        padKey: 'k',
-        padAudioSrc: '/audio/snare8.wav'
+        padKey: ['k', 'd'],
+        padAudioSrc: '/audio/snare-classic.wav'
       },
       {
         padName: 'kick',
-        padKey: ' ',
+        padKey: [' '],
         padAudioSrc: '/audio/kick12.wav'
       }
     ]
@@ -24,17 +24,17 @@ const drumKits = [
     kitPads: [
       {
         padName: 'hihat',
-        padKey: 'j',
+        padKey: ['j', 'f'],
         padAudioSrc: '/audio/hihat6.wav'
       },
       {
         padName: 'snare',
-        padKey: 'k',
-        padAudioSrc: '/audio/snare8.wav'
+        padKey: ['k', 'd'],
+        padAudioSrc: '/audio/snare-classic.wav'
       },
       {
         padName: 'kick',
-        padKey: ' ',
+        padKey: [' '],
         padAudioSrc: '/audio/kick12.wav'
       }
     ]
