@@ -4,7 +4,7 @@ import Drum from "./components/Drum";
 import drumKits from "./data/drumKits";
 
 function App() {
-  const [selectedKitName, setSelectedKitName] = useState(data[0].name);
+  const [selectedKitName, setSelectedKitName] = useState(drumKits.find((kit) => kit.kitName === 'Original'));
   const handleKitChange = (e) => {
     setSelectedKitName(e.target.value);
   }
@@ -12,15 +12,17 @@ function App() {
   return (
     <div>
       <h1>Drum Punch</h1>
-      <label>Select a drum kit:</label>
+      <label>Select a drum kit: </label>
       <select name="" id="" value={selectedKitName} onChange={handleKitChange}>
-        {drumKits.map((kit) => {
-          <option key={kit.name} value={kit.name}>
-            {kit.name}
-          </option>
-        })}
+        {
+          drumKits.map((kit) => (
+            <option key={kit.kitName} value={kit.kitName}>
+              {kit.kitName}
+            </option>
+          ))
+        }
       </select>
-      <Drum kit={drumKits.find((kit) => kit.name === selectedKitName)}/>
+      <Drum kit={drumKits.find((kit) => kit.kitName === selectedKitName.kitName)}/>
     </div>
   );
 }

@@ -1,22 +1,44 @@
 const drumKits = [
   {
-    name: 'Original',
-    pads: [
+    kitName: 'Original',
+    kitPads: [
       {
-        kit: 'hihat',
-        key: 'j',
-        src: '/audio/hihat6.wav'
+        padName: 'hihat',
+        padKey: 'j',
+        padAudioSrc: '/audio/hihat6.wav'
       },
       {
-        kit: 'snare',
-        key: 'k',
-        src: '/audio/snare8.wav'
+        padName: 'snare',
+        padKey: 'k',
+        padAudioSrc: '/audio/snare8.wav'
       },
       {
-        kit: 'kick',
-        key: ' ',
-        src: '/audio/kick12.wav'
+        padName: 'kick',
+        padKey: ' ',
+        padAudioSrc: '/audio/kick12.wav'
+      }
+    ]
+  },
+  {
+    kitName: 'Classic',
+    kitPads: [
+      {
+        padName: 'hihat',
+        padKey: 'j',
+        padAudioSrc: '/audio/hihat6.wav'
+      },
+      {
+        padName: 'snare',
+        padKey: 'k',
+        padAudioSrc: '/audio/snare8.wav'
+      },
+      {
+        padName: 'kick',
+        padKey: ' ',
+        padAudioSrc: '/audio/kick12.wav'
       }
     ]
   }
 ]
+
+export default drumKits;
