@@ -1,19 +1,16 @@
 import DrumPad from "./DrumPad";
 import React, { useEffect } from 'react';
 
-function Drum(props) {
-  const { kit } = props;
-
+function Drum({ kit }) {
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [kit]);
 
   const handleKeyDown = (e) => {
     const pad = kit.kitPads.find((pad) => pad.padKey.includes(e.key));
-    console.log(pad);
     if (pad) {
       const audio = new Audio(pad.padAudioSrc);
       console.log(pad.padAudioSrc);

@@ -10,7 +10,7 @@ const drumKits = [
       {
         padName: 'snare',
         padKey: ['k', 'd'],
-        padAudioSrc: '/audio/snare-classic.wav'
+        padAudioSrc: '/audio/snare8.wav'
       },
       {
         padName: 'kick',
