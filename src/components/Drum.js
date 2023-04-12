@@ -8,7 +8,7 @@ function Drum({ kit }) {
     if (pad) {
       const audio = new Audio(pad.padAudioSrc);
       console.log(pad.padAudioSrc);
-      audio.currentTime = 0.05;
+      audio.currentTime = 0.03;
       audio.play();
     }
   }
