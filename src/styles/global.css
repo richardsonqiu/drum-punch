@@ -11,6 +11,11 @@ h1, h2, h3, h4, h5, h6 {
   --primary-color: #007bff;
   --secondary-color: #6c757d;
   --bg-color: #f8f9fa;
+  --small: 100px;
+  --medium: 150px;
+  --large: 200px;
+  --xlarge: 300px;
+
 }
 
 * {

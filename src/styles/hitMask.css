@@ -1,0 +1,37 @@
+.hitMask {
+  position: absolute;
+  z-index: 3;
+  object-fit: contain;
+}
+
+.snare {
+  fill: #000;
+}
+
+.hihat {
+  fill: #000;
+}
+
+.tom1 {
+  fill: #000;
+}
+
+.tom2 {
+  fill: #000;
+}
+
+.floor {
+  fill: #000;
+}
+
+.ride {
+  fill: #000;
+}
+
+.crash {
+  fill: #000;
+}
+
+.kick {
+  fill: #000;
+}

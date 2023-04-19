@@ -1,6 +1,6 @@
 const drumKits = [
   {
-    kitName: 'Original',
+    kitName: 'Trap',
     kitPads: [
       {
         padName: 'hihat',
@@ -8,7 +8,7 @@ const drumKits = [
         padAudioSrc: '/audio/hihat11.wav'
       },
       {
-        padName: 'open hihat',
+        padName: 'open-hihat',
         padKey: ['h', 'g'],
         padAudioSrc: '/audio/openhihat2.wav'
       },
@@ -43,7 +43,7 @@ const drumKits = [
         padAudioSrc: '/audio/kick8.wav'
       },
       {
-        padName: 'floor tom',
+        padName: 'floor',
         padKey: ['l', 's'],
         padAudioSrc: '/audio/kick1.wav'
       }
@@ -58,7 +58,7 @@ const drumKits = [
         padAudioSrc: '/audio/ride10.wav'
       },
       {
-        padName: 'open hihat',
+        padName: 'open-hihat',
         padKey: ['h', 'g'],
         padAudioSrc: '/audio/crash1.wav'
       },
@@ -93,7 +93,7 @@ const drumKits = [
         padAudioSrc: '/audio/kick8.wav'
       },
       {
-        padName: 'floor tom',
+        padName: 'floor',
         padKey: ['l', 's'],
         padAudioSrc: '/audio/kick1.wav'
       }

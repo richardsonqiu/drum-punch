@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1395" height="844" viewBox="0 0 1395 844">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #141414;
+      }
+    </style>
+  </defs>
+  <ellipse id="snare" class="cls-1" cx="476.5" cy="581.5" rx="122.5" ry="121.5"/>
+  <ellipse id="hihat" class="cls-1" cx="230" cy="592" rx="144" ry="148"/>
+  <circle id="tom1" class="cls-1" cx="620" cy="352" r="92"/>
+  <circle id="tom2" class="cls-1" cx="859.5" cy="373.5" r="113.5"/>
+  <circle id="floor" class="cls-1" cx="1057" cy="566" r="144"/>
+  <ellipse id="ride" class="cls-1" cx="1147" cy="326" rx="174" ry="183"/>
+  <ellipse id="crash" class="cls-1" cx="370" cy="309" rx="172" ry="151"/>
+  <ellipse id="kick2" class="cls-1" cx="733.5" cy="107.5" rx="184.5" ry="10.5"/>
+</svg>

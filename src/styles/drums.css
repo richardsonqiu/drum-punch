@@ -1,0 +1,84 @@
+.drum-kit {
+  display: flex;
+  /* width: 500px;
+  height: 500px; */
+  /* max-width: 100%; */
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum-kit-bg {
+
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.drum-pad {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #a4b7cc;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.snare {
+  top: 350px;
+  left: 270px;
+  width: var(--medium);
+  height: var(--medium);
+}
+
+.hihat {
+  top: 150px;
+  left: 50px;
+  width: var(--medium);
+  height: var(--medium);
+}
+
+.kick {
+  top: 350px;
+  left: 420px;
+  width: calc(var(--xlarge)+200px);
+  height: calc(var(--xlarge)+200px);
+}
+
+.tom1 {
+  top: 200px;
+  left: 350px;
+  width: var(--medium);
+  height: var(--medium);
+}
+
+.tom2 {
+  top: 200px;
+  left: 490px;
+  width: var(--medium);
+  height: var(--medium);
+}
+
+.floor-tom {
+  top: 350px;
+  left: 600px;
+  width: var(--large);
+  height: var(--large);
+}
+
+.ride {
+  top: 180px;
+  left: 650px;
+  width: var(--large);
+  height: var(--large);
+}
+
+.crash {
+  top: 200px;
+  left: 100px;
+  width: var(--medium);
+  height: var(--medium);
+}
