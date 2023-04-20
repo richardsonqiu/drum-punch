@@ -2,6 +2,8 @@
   position: absolute;
   z-index: 3;
   object-fit: contain;
+  max-width: 1395px;
+  max-height: 844px;
 }
 
 .snare {

@@ -36,7 +36,7 @@ function App() {
           ))
         }
       </select>
-      <div className="drum-contain">
+      <div className="drum-container">
         <Drum kit={drumKits.find((kit) => kit.kitName === selectedKitName)} className="drum" />
       </div>
 
