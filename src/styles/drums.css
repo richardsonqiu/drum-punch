@@ -1,0 +1,40 @@
+.drum-kit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum-kit-bg {
+  position: relative;
+  z-index: 1;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.drum-name {
+  /* width: 100%; */
+}
+
+.select-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.drum-pad {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #a4b7cc;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
