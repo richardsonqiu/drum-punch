@@ -9,6 +9,24 @@
   z-index: 1;
 }
 
+.top-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.drum-name {
+  /* width: 100%; */
+}
+
+.select-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .drum-pad {
   position: absolute;
   width: 100px;
@@ -19,60 +37,4 @@
   justify-content: center;
   align-items: center;
   display: flex;
-}
-
-.snare {
-  top: 350px;
-  left: 270px;
-  width: var(--medium);
-  height: var(--medium);
-}
-
-.hihat {
-  top: 150px;
-  left: 50px;
-  width: var(--medium);
-  height: var(--medium);
-}
-
-.kick {
-  top: 350px;
-  left: 420px;
-  width: calc(var(--xlarge)+200px);
-  height: calc(var(--xlarge)+200px);
-}
-
-.tom1 {
-  top: 200px;
-  left: 350px;
-  width: var(--medium);
-  height: var(--medium);
-}
-
-.tom2 {
-  top: 200px;
-  left: 490px;
-  width: var(--medium);
-  height: var(--medium);
-}
-
-.floor-tom {
-  top: 350px;
-  left: 600px;
-  width: var(--large);
-  height: var(--large);
-}
-
-.ride {
-  top: 180px;
-  left: 650px;
-  width: var(--large);
-  height: var(--large);
-}
-
-.crash {
-  top: 200px;
-  left: 100px;
-  width: var(--medium);
-  height: var(--medium);
 }

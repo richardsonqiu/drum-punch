@@ -11,9 +11,24 @@ function App() {
   }
 
   return (
-    <div className="drm">
-      <h1 className="drum-nme">Drum Punch</h1>
-      <label>Select a drum kit: </label>
+    <div className="drum">
+      <div className="top-menu">
+        <h1 className="drum-name">Drum Punch</h1>
+        <div className="select-wrapper">
+          <label>Select a drum kit: </label>
+          <select name="kit-selection" id="kit-selection" value={selectedKitName} onChange={handleKitChange}>
+            {
+              drumKits.map((kit) => (
+                <option key={kit.kitName} value={kit.kitName}>
+                  {kit.kitName}
+                </option>
+              ))
+            }
+          </select>
+        </div>
+
+      </div>
+
       {/* <Dropdown variant="success" id="dropdown-basic" value={selectedKitName} onChange={handleKitChange}>
         <Dropdown.Toggle>
           Choose Kit
@@ -27,15 +42,7 @@ function App() {
         </Dropdown.Menu>
 
       </Dropdown> */}
-      <select name="kit-selection" id="kit-selection" value={selectedKitName} onChange={handleKitChange}>
-        {
-          drumKits.map((kit) => (
-            <option key={kit.kitName} value={kit.kitName}>
-              {kit.kitName}
-            </option>
-          ))
-        }
-      </select>
+
       <div className="drum-container">
         <Drum kit={drumKits.find((kit) => kit.kitName === selectedKitName)} className="drum" />
       </div>
