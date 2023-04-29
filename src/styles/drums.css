@@ -16,15 +16,19 @@
   flex-wrap: wrap;
 }
 
-.drum-name {
-  /* width: 100%; */
-}
-
 .select-wrapper {
   display: flex;
   flex-basis: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.select-wrapper select {
+  display: flex;
+  margin-left: 10px;
+  color: #333;
+  font-family: inherit;
+  border-radius: 10%
 }
 
 .drum-pad {

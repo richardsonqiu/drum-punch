@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./styles/global.css";
 import Drum from "./components/Drum";
+import TimelinePanel from "./components/TimelinePanel/TimelinePanel";
 import drumKits from "./data/drumKits";
 // import Dropdown from "react-bootstrap/Dropdown";
 
@@ -29,23 +30,11 @@ function App() {
 
       </div>
 
-      {/* <Dropdown variant="success" id="dropdown-basic" value={selectedKitName} onChange={handleKitChange}>
-        <Dropdown.Toggle>
-          Choose Kit
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-          {
-            drumKits.map((kit) => (
-              <Dropdown.Item>{kit.kitName}</Dropdown.Item>
-            ))
-          }
-        </Dropdown.Menu>
-
-      </Dropdown> */}
-
       <div className="drum-container">
         <Drum kit={drumKits.find((kit) => kit.kitName === selectedKitName)} className="drum" />
       </div>
+
+      <TimelinePanel></TimelinePanel>
 
     </div>
   );

@@ -16,16 +16,13 @@ function Drum({ kit }) {
   });
 
   const handleKeyDown = (e) => {
-    // console.log(e);
     const pad = kit.kitPads.find((pad) => pad.padKey.includes(e.key.toLowerCase()));
     if (pad) {
       setPressedPads(prevPads => ({
         ...prevPads,
         [pad.padName]: true
       }));
-      console.log(pressedPads);
       const audio = new Audio(pad.padAudioSrc);
-      console.log(pad.padAudioSrc);
       audio.currentTime = 0.03;
       audio.play();
     }
@@ -42,11 +39,9 @@ function Drum({ kit }) {
   }
 
   const handleClick = (e) => {
-    // console.log(e.target.innerText);
     const pad = kit.kitPads.find((pad) => pad.padName === e.target.innerText);
     if (pad) {
       const audio = new Audio(pad.padAudioSrc);
-      console.log(pad.padAudioSrc);
       audio.currentTime = 0.03;
       audio.play();
     }
@@ -56,13 +51,6 @@ function Drum({ kit }) {
 
   return (
     <div tabIndex={1} onKeyDown={handleKeyDown} onKeyUp={handleKeyUp} onClick={handleClick} className="drum-kit">
-      {/* {
-        kit.kitPads.map((pad) => (
-          <div className={`drum-pad ${pad.padName}`}>
-            <DrumPad key={pad.padName} pad={pad} />
-          </div>
-        ))
-      } */}
       <HitMask pressedPads={pressedPads} />
       <img src="/img/drumkit.png" className="drum-kit-bg" />
     </div>
